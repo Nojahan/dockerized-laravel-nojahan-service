@@ -25,7 +25,7 @@ $ CURRENT_UID=$(id -u):$(id -g) docker-compose down
 
 #### Fix services permissions
 ```bash
-$ sudo chown -R $(id -u):$(id -g) {./nginx/,./php/,./src/}
+$ sudo chown -R $(id -u):$(id -g) {./nginx/,./php/,./postgresql,./redis,./src/}
 ```
 
 #### Nginx Log
@@ -66,6 +66,26 @@ $ docker-compose exec --user $(id -u):$(id -g) php php artisan
 #### Fix Laravel storage permission:
 ```bash
 $ docker-compose exec --user root php chown -R www-data:www-data /var/www/html/storage
+```
+
+#### PostgreSQL Log
+```bash
+$ docker-compose logs --tail 100 --follow postgresql
+```
+
+#### PostgreSQL CLI
+```bash
+$ docker-compose exec --user $(id -u):$(id -g) --env="PGPASSWORD=${POSTGRES_PASSWORD:-docker}" postgresql psql --dbname=docker --username=docker
+```
+
+#### Redis Log
+```bash
+$ docker-compose logs --tail 100 --follow redis
+```
+
+#### Redis CLI
+```bash
+$ docker-compose exec --user $(id -u):$(id -g) redis redis-cli -p ${REDIS_PORT:-6379} -a ${REDIS_PASSWORD:-docker}
 ```
 
 ## License

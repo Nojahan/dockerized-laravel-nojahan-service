@@ -33,12 +33,52 @@ services:
       - ./src:/var/www/html
       - ./php/conf.d:/usr/local/etc/php/conf.d
       - ./php/udocker:/home/udocker
+      - ./src/supervisord/supervisord.conf:/etc/supervisord.conf
     restart: ${PHP_RESTART_POLICY:-always}
     environment:
       - PHP_OPCACHE_JIT=${PHP_OPCACHE_JIT:-on}
       - PHP_XDEBUG_MODE=${PHP_XDEBUG_MODE:-off}
       - LARAVEL_ENV_APP_URL=${NGINX_IPV4:-172.110.0.2}
+      - POSTGRES_HOST=${POSTGRES_HOST:-postgresql}
+      - POSTGRES_PORT=${POSTGRES_PORT:-5432}
+      - POSTGRES_DB=${POSTGRES_DB:-docker}
+      - POSTGRES_USER=${POSTGRES_USER:-docker}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-docker}
+      - REDIS_HOST=${REDIS_HOST:-redis}
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-docker}
     user: ${CURRENT_UID:-root}
     networks:
       alireaza:
         ipv4_address: ${PHP_IPV4:-172.110.0.3}
+    depends_on:
+      postgresql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  postgresql:
+    build: ./postgresql
+    volumes:
+      - ./postgresql/udocker:/var/lib/postgresql/data
+    restart: ${POSTGRES_RESTART_POLICY:-always}
+    environment:
+      - TZ=$(cat /etc/timezone)
+      - POSTGRES_DB=${POSTGRES_DB:-docker}
+      - POSTGRES_USER=${POSTGRES_USER:-docker}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-docker}
+    networks:
+      alireaza:
+        ipv4_address: ${POSTGRES_IPV4:-172.110.0.4}
+
+  redis:
+    build: ./redis
+    restart: ${REDIS_RESTART_POLICY:-always}
+    environment:
+      - TZ=$(cat /etc/timezone)
+      - REDIS_PORT=${REDIS_PORT:-6379}
+      - REDIS_PASSWORD=${REDIS_PASSWORD:-docker}
+    command: redis-server --requirepass ${REDIS_PASSWORD:-docker} --port ${REDIS_PORT:-6379} --save '' --appendonly no
+    networks:
+      alireaza:
+        ipv4_address: ${REDIS_IPV4:-172.110.0.5}
