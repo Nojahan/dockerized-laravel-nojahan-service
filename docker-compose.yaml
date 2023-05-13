@@ -38,7 +38,7 @@ services:
     environment:
       - PHP_OPCACHE_JIT=${PHP_OPCACHE_JIT:-on}
       - PHP_XDEBUG_MODE=${PHP_XDEBUG_MODE:-off}
-      - LARAVEL_ENV_APP_URL=${NGINX_IPV4:-172.110.0.2}
+      - LARAVEL_ENV_APP_URL=http://${NGINX_IPV4:-172.110.0.2}
       - POSTGRES_HOST=${POSTGRES_HOST:-postgresql}
       - POSTGRES_PORT=${POSTGRES_PORT:-5432}
       - POSTGRES_DB=${POSTGRES_DB:-docker}
