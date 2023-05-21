@@ -2393,12 +2393,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "98e08e6e62525beaa5d6dafb3f83dd2162be35d4"
+                "reference": "44874dfc69d2fb1625c9cf93b57d13b12d214da2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/98e08e6e62525beaa5d6dafb3f83dd2162be35d4",
-                "reference": "98e08e6e62525beaa5d6dafb3f83dd2162be35d4",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/44874dfc69d2fb1625c9cf93b57d13b12d214da2",
+                "reference": "44874dfc69d2fb1625c9cf93b57d13b12d214da2",
                 "shasum": ""
             },
             "require": {
@@ -2450,7 +2450,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-05-21T14:04:10+00:00"
+            "time": "2023-05-21T15:09:43+00:00"
         },
         {
             "name": "nunomaduro/termwind",
