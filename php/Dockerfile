@@ -20,6 +20,15 @@ RUN apk --no-cache --virtual .supervisord add --update \
 && echo "nodaemon=true" >> /etc/supervisord.conf \
 && apk del .supervisord
 
+RUN apk --no-cache --virtual .gd add --update autoconf build-base automake make g++ \
+icu-dev icu-libs zlib-dev libzip-dev \
+libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev \
+&& apk --no-cache add libpng libwebp libjpeg-turbo freetype \
+&& docker-php-ext-configure gd --enable-gd --with-jpeg --with-webp --with-freetype \
+&& NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
+&& docker-php-ext-install -j${NPROC} gd \
+&& apk del .gd
+
 USER $UNAME
 
 ENTRYPOINT ["/bin/sh", "-c", "php-fpm & supervisord --configuration /etc/supervisord.conf"]
