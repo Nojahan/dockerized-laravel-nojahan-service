@@ -21,13 +21,21 @@ RUN apk --no-cache --virtual .supervisord add --update \
 && apk del .supervisord
 
 RUN apk --no-cache --virtual .gd add --update autoconf build-base automake make g++ \
-icu-dev icu-libs zlib-dev libzip-dev \
-libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev \
+icu-dev icu-libs icu-data-full zlib-dev libzip-dev \
+libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev libxml2-dev \
 && apk --no-cache add libpng libwebp libjpeg-turbo freetype \
 && docker-php-ext-configure gd --enable-gd --with-jpeg --with-webp --with-freetype \
 && NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
 && docker-php-ext-install -j${NPROC} gd \
 && apk del .gd
+
+RUN apk --no-cache --virtual .imagick add --update autoconf build-base automake make g++ \
+icu-dev icu-libs icu-data-full zlib-dev libzip-dev \
+libpng-dev libwebp-dev libjpeg-turbo-dev freetype-dev libxml2-dev \
+&& apk --no-cache add libpng libwebp libjpeg-turbo freetype imagemagick imagemagick-dev file libgomp tar gzip libtool \
+&& if [[ -n "$http_proxy" ]] ; then pear config-set http_proxy {$http_proxy}; fi \
+&& pecl install imagick && docker-php-ext-enable imagick \
+&& apk del .imagick
 
 USER $UNAME
 
