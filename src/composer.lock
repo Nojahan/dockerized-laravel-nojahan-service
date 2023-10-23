@@ -3699,12 +3699,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "bf31cfd74447810c0161e2d324fda5273fa0b890"
+                "reference": "e8e56681aa421bab9d4858f8bc3ba794f3e17050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/bf31cfd74447810c0161e2d324fda5273fa0b890",
-                "reference": "bf31cfd74447810c0161e2d324fda5273fa0b890",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/e8e56681aa421bab9d4858f8bc3ba794f3e17050",
+                "reference": "e8e56681aa421bab9d4858f8bc3ba794f3e17050",
                 "shasum": ""
             },
             "require": {
@@ -3716,6 +3716,7 @@
                 "laravel/passport": "^11.8",
                 "league/flysystem-aws-s3-v3": "^3.0",
                 "php": "^8.0.0",
+                "promphp/prometheus_client_php": "2.7.1",
                 "sentry/sentry-laravel": "^3.4.1"
             },
             "default-branch": true,
@@ -3761,7 +3762,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-10-21T21:14:17+00:00"
+            "time": "2023-10-23T10:16:48+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -4613,6 +4614,73 @@
                 }
             ],
             "time": "2023-06-13T06:30:34+00:00"
+        },
+        {
+            "name": "promphp/prometheus_client_php",
+            "version": "v2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PromPHP/prometheus_client_php.git",
+                "reference": "82e42b5a491ee94127110548ee835052b9765a78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PromPHP/prometheus_client_php/zipball/82e42b5a491ee94127110548ee835052b9765a78",
+                "reference": "82e42b5a491ee94127110548ee835052b9765a78",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2|^8.0"
+            },
+            "replace": {
+                "endclothing/prometheus_client_php": "*",
+                "jimdo/prometheus_client_php": "*",
+                "lkaemmerling/prometheus_client_php": "*"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3|^7.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.5.4",
+                "phpstan/phpstan-phpunit": "^1.1.0",
+                "phpstan/phpstan-strict-rules": "^1.1.0",
+                "phpunit/phpunit": "^9.4",
+                "squizlabs/php_codesniffer": "^3.6",
+                "symfony/polyfill-apcu": "^1.6"
+            },
+            "suggest": {
+                "ext-apc": "Required if using APCu.",
+                "ext-redis": "Required if using Redis.",
+                "promphp/prometheus_push_gateway_php": "An easy client for using Prometheus PushGateway.",
+                "symfony/polyfill-apcu": "Required if you use APCu on PHP8.0+"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Prometheus\\": "src/Prometheus/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Kämmerling",
+                    "email": "kontakt@lukas-kaemmerling.de"
+                }
+            ],
+            "description": "Prometheus instrumentation library for PHP applications.",
+            "support": {
+                "issues": "https://github.com/PromPHP/prometheus_client_php/issues",
+                "source": "https://github.com/PromPHP/prometheus_client_php/tree/v2.7.1"
+            },
+            "time": "2023-04-24T18:11:52+00:00"
         },
         {
             "name": "psr/cache",
