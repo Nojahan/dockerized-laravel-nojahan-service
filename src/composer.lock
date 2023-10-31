@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7475670ec49301308b9392ae3e20ffe",
+    "content-hash": "b1aaa5ff33ac89273c337953a0d32e18",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -3695,16 +3695,16 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-prometheus",
+            "version": "dev-UserLevel",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "04b556f9a3e6a71cf3ababe4ea1b97f88e900900"
+                "reference": "0faf816296778ea69e5c4e4a0616051f4e00c25d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/04b556f9a3e6a71cf3ababe4ea1b97f88e900900",
-                "reference": "04b556f9a3e6a71cf3ababe4ea1b97f88e900900",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/0faf816296778ea69e5c4e4a0616051f4e00c25d",
+                "reference": "0faf816296778ea69e5c4e4a0616051f4e00c25d",
                 "shasum": ""
             },
             "require": {
@@ -3752,7 +3752,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/prometheus",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/UserLevel",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3761,7 +3761,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-10-31T08:54:09+00:00"
+            "time": "2023-10-31T15:57:07+00:00"
         },
         {
             "name": "nunomaduro/termwind",
