@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6068b071a86c96ad5e1b40666ebe255b",
+    "content-hash": "9c7cef4d3eff5c4367cbfe0856554fb4",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -3695,16 +3695,16 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-error-report",
+            "version": "dev-RC-20231112",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "8e9c39807ee94c5f0515639ce806bfa37920f1b5"
+                "reference": "4d22ce98bb5e7c92e34ad46d04fef4edcd5723ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/8e9c39807ee94c5f0515639ce806bfa37920f1b5",
-                "reference": "8e9c39807ee94c5f0515639ce806bfa37920f1b5",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/4d22ce98bb5e7c92e34ad46d04fef4edcd5723ad",
+                "reference": "4d22ce98bb5e7c92e34ad46d04fef4edcd5723ad",
                 "shasum": ""
             },
             "require": {
@@ -3752,7 +3752,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/error-report",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/RC-20231112",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3761,7 +3761,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-11-12T14:03:32+00:00"
+            "time": "2023-11-12T15:34:41+00:00"
         },
         {
             "name": "nunomaduro/termwind",
