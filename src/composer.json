@@ -10,7 +10,7 @@
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "nojahan/laravel-nojahan": "dev-RC-20231114"
+        "nojahan/laravel-nojahan": "dev-RC-20231115"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
