@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53b318ade8f900b6b258d506c78f9780",
+    "content-hash": "1e4791cb83bbd5356f01a7373641e016",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -3695,16 +3695,16 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-RC-20231118",
+            "version": "dev-RC-20231119",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "3bc59d877e75fc08fcd4a1456a7050ca683eef5e"
+                "reference": "96b352d2e9be6c121df1c7a49733110061c0d0ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/3bc59d877e75fc08fcd4a1456a7050ca683eef5e",
-                "reference": "3bc59d877e75fc08fcd4a1456a7050ca683eef5e",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/96b352d2e9be6c121df1c7a49733110061c0d0ae",
+                "reference": "96b352d2e9be6c121df1c7a49733110061c0d0ae",
                 "shasum": ""
             },
             "require": {
@@ -3752,7 +3752,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/RC-20231118",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/RC-20231119",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3761,7 +3761,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-11-18T16:18:00+00:00"
+            "time": "2023-11-19T10:06:51+00:00"
         },
         {
             "name": "nunomaduro/termwind",
