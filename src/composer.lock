@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ca81386f5246c9a24292931010ee95e",
+    "content-hash": "43c3fcb4813ff15ca4f6e8cd3e71b5fd",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -3695,16 +3695,16 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-RC-20231125",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "0cd1eb36da905e9ecb6316128e96a79d099c0115"
+                "reference": "7bbc3dc32df89c4c38403fcfe15841afb06e14f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/0cd1eb36da905e9ecb6316128e96a79d099c0115",
-                "reference": "0cd1eb36da905e9ecb6316128e96a79d099c0115",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/7bbc3dc32df89c4c38403fcfe15841afb06e14f5",
+                "reference": "7bbc3dc32df89c4c38403fcfe15841afb06e14f5",
                 "shasum": ""
             },
             "require": {
@@ -3719,6 +3719,7 @@
                 "promphp/prometheus_client_php": "2.7.1",
                 "sentry/sentry-laravel": "^3.4.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3752,7 +3753,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/RC-20231125",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/main",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3761,7 +3762,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-11-25T11:30:17+00:00"
+            "time": "2023-11-25T11:47:32+00:00"
         },
         {
             "name": "nunomaduro/termwind",
