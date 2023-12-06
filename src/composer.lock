@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43c3fcb4813ff15ca4f6e8cd3e71b5fd",
+    "content-hash": "9a54786994a94033b3f6d763c0cfc7fd",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -1737,6 +1737,74 @@
                 }
             ],
             "time": "2022-05-21T17:30:32+00:00"
+        },
+        {
+            "name": "itsgoingd/clockwork",
+            "version": "v5.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/itsgoingd/clockwork.git",
+                "reference": "c9dbdbb1f0efd19bb80f1080ef63f1b9b1bc3b1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/itsgoingd/clockwork/zipball/c9dbdbb1f0efd19bb80f1080ef63f1b9b1bc3b1b",
+                "reference": "c9dbdbb1f0efd19bb80f1080ef63f1b9b1bc3b1b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Clockwork\\Support\\Laravel\\ClockworkServiceProvider"
+                    ],
+                    "aliases": {
+                        "Clockwork": "Clockwork\\Support\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Clockwork\\": "Clockwork/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "itsgoingd",
+                    "email": "itsgoingd@luzer.sk",
+                    "homepage": "https://twitter.com/itsgoingd"
+                }
+            ],
+            "description": "php dev tools in your browser",
+            "homepage": "https://underground.works/clockwork",
+            "keywords": [
+                "Devtools",
+                "debugging",
+                "laravel",
+                "logging",
+                "lumen",
+                "profiling",
+                "slim"
+            ],
+            "support": {
+                "issues": "https://github.com/itsgoingd/clockwork/issues",
+                "source": "https://github.com/itsgoingd/clockwork/tree/v5.1.12"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/itsgoingd",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-13T00:04:12+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -3695,22 +3763,23 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-main",
+            "version": "dev-RC-20231206",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "36361dffdd92e070c0660a815484c84d4762775d"
+                "reference": "e6f63e91a6b17b9d5aef75b54f460acfe7ec8f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/36361dffdd92e070c0660a815484c84d4762775d",
-                "reference": "36361dffdd92e070c0660a815484c84d4762775d",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/e6f63e91a6b17b9d5aef75b54f460acfe7ec8f77",
+                "reference": "e6f63e91a6b17b9d5aef75b54f460acfe7ec8f77",
                 "shasum": ""
             },
             "require": {
                 "alireaza/laravel-form-data": "1.2.0",
                 "darkaonline/l5-swagger": "^8.5",
                 "intervention/image": "^2.7",
+                "itsgoingd/clockwork": "5.1.12",
                 "kavenegar/laravel": "1.3.6",
                 "laravel/framework": "^10.0",
                 "laravel/passport": "^11.8",
@@ -3719,7 +3788,6 @@
                 "promphp/prometheus_client_php": "2.7.1",
                 "sentry/sentry-laravel": "^3.4.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3753,7 +3821,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/main",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/RC-20231206",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3762,7 +3830,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-12-06T06:22:53+00:00"
+            "time": "2023-12-06T06:56:34+00:00"
         },
         {
             "name": "nunomaduro/termwind",
