@@ -3893,12 +3893,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "c9e0a4a77c706957706657aee85850b104c42ef4"
+                "reference": "c9627aa36f0773f61f3c6d5942955693a828962a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/c9e0a4a77c706957706657aee85850b104c42ef4",
-                "reference": "c9e0a4a77c706957706657aee85850b104c42ef4",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/c9627aa36f0773f61f3c6d5942955693a828962a",
+                "reference": "c9627aa36f0773f61f3c6d5942955693a828962a",
                 "shasum": ""
             },
             "require": {
@@ -3943,7 +3943,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/RP-Milad",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/RemoveRepositories",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3952,7 +3952,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-12-19T14:32:24+00:00"
+            "time": "2023-12-19T14:45:45+00:00"
         },
         {
             "name": "nunomaduro/termwind",
