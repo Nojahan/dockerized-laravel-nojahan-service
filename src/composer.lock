@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af91bca3785343c96a009c4c2c4334ab",
+    "content-hash": "41d982e63f5830f28be8b96f617ff29c",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -3889,16 +3889,16 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-RemoveRepositories",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "6b8e9d41e791c2906cd28233dab9ca675ed6af15"
+                "reference": "05a0ff9b2417e9551c8d3abfefa2b373fbe9d1c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/6b8e9d41e791c2906cd28233dab9ca675ed6af15",
-                "reference": "6b8e9d41e791c2906cd28233dab9ca675ed6af15",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/05a0ff9b2417e9551c8d3abfefa2b373fbe9d1c9",
+                "reference": "05a0ff9b2417e9551c8d3abfefa2b373fbe9d1c9",
                 "shasum": ""
             },
             "require": {
@@ -3913,6 +3913,7 @@
                 "promphp/prometheus_client_php": "^2.8",
                 "sentry/sentry-laravel": "^3.4.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3943,7 +3944,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/RemoveRepositories",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/main",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3952,7 +3953,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2023-12-24T07:11:36+00:00"
+            "time": "2023-12-25T07:03:18+00:00"
         },
         {
             "name": "nunomaduro/termwind",
