@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c1b18a86924ef2d48cc3011250aa786",
+    "content-hash": "41d982e63f5830f28be8b96f617ff29c",
     "packages": [
         {
             "name": "alireaza/laravel-form-data",
@@ -3889,16 +3889,16 @@
         },
         {
             "name": "nojahan/laravel-nojahan",
-            "version": "dev-WIP-AliReaza",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:nojahan/laravel-nojahan.git",
-                "reference": "7a398ef583ba2a11f4114f167fdacf90ca2aec01"
+                "reference": "992504377857094bcd0ac399a8c4563159fe0f15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/7a398ef583ba2a11f4114f167fdacf90ca2aec01",
-                "reference": "7a398ef583ba2a11f4114f167fdacf90ca2aec01",
+                "url": "https://api.github.com/repos/nojahan/laravel-nojahan/zipball/992504377857094bcd0ac399a8c4563159fe0f15",
+                "reference": "992504377857094bcd0ac399a8c4563159fe0f15",
                 "shasum": ""
             },
             "require": {
@@ -3913,6 +3913,7 @@
                 "promphp/prometheus_client_php": "^2.8",
                 "sentry/sentry-laravel": "^3.4.1"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3943,7 +3944,7 @@
                 "nojahan"
             ],
             "support": {
-                "source": "https://github.com/nojahan/laravel-nojahan/tree/WIP-AliReaza",
+                "source": "https://github.com/nojahan/laravel-nojahan/tree/HotFix-20240110",
                 "issues": "https://github.com/nojahan/laravel-nojahan/issues"
             },
             "funding": [
@@ -3952,7 +3953,7 @@
                     "url": "https://www.linkedin.com/in/alireaza"
                 }
             ],
-            "time": "2024-01-09T13:26:54+00:00"
+            "time": "2024-01-10T08:40:24+00:00"
         },
         {
             "name": "nunomaduro/termwind",
